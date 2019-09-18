@@ -30,25 +30,25 @@ layout: default
         {{ content }}
 
         <!-- Home Post List -->
-        {% for Post in site.Posts limit : 5 %}
+        {% for post in site.posts limit : 5 %}
 
         <article class="post-preview">
-          <a href="{{ Post.url | prepend: site.baseurl | replace: '//', '/' }}">
-            <h2 class="post-title">{{ Post.title }}</h2>
-            {% if Post.subtitle %}
-            <h3 class="post-subtitle">{{ Post.subtitle }}</h3>
+          <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+            <h2 class="post-title">{{ post.title }}</h2>
+            {% if post.subtitle %}
+            <h3 class="post-subtitle">{{ post.subtitle }}</h3>
             {% else %}
-            <h3 class="post-subtitle">{{ Post.excerpt | strip_html | truncatewords: 15 }}</h3>
+            <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
             {% endif %}
           </a>
           <p class="post-meta">Posted by
-            {% if Post.author %}
-            {{ Post.author }}
+            {% if post.author %}
+            {{ post.author }}
             {% else %}
             {{ site.author }}
             {% endif %}
             on
-            {{ Post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=Post.content %}            
+            {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}            
           </p>
         </article>
 
