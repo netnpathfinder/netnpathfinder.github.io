@@ -75,3 +75,13 @@ img::-moz-selection {
   color: $white;
   background: transparent;
 }
+
+table, th, td {
+  border: 1px $primary;
+  text-align: center;
+  padding:0 15px 0 15px;
+}
+
+tr:nth-child(even) {
+  background-color: $gray-600
+}
