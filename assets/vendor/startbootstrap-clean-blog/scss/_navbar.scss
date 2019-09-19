@@ -39,6 +39,7 @@
     }
     .navbar-nav {
       > li.nav-item {
+		align-items: center;
         > a {
           padding: 10px 20px;
           color: $white;
