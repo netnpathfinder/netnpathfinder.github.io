@@ -4063,8 +4063,6 @@ input[type="button"].btn-block {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  vertical-align: middle;
-  text-align: center;
 }
 
 .nav-link:hover, .nav-link:focus {
