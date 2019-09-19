@@ -16,6 +16,7 @@
     color: $gray-800;
   }
   .navbar-nav {
+  	align-items: center;
     > li.nav-item {
       > a {
         font-size: 12px;
@@ -38,6 +39,7 @@
       }
     }
     .navbar-nav {
+	align-items: center;
       > li.nav-item {
         > a {
           padding: 10px 20px;
